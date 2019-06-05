@@ -1,1 +1,0 @@
-# partyInvitesASP.NET-MVC
