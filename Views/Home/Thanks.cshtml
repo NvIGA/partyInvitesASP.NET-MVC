@@ -1,0 +1,30 @@
+﻿@model PartyInvites.Models.GuestResponse
+@{
+    Layout = null;
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks bro</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="text-center">
+        <h3>Thank you, @Model.Name! </h3>
+        @if (Model.WillAttend == true)
+        {
+            @:<h4>Play dotka drink vodka</h4>
+        }
+        else
+        {
+            @:<h4>goodbye kolega</h4>
+        }
+        <h4>Click <a class="navbar-link" asp-action="ListResponces">here</a> to see who is coming.</h4>
+    </div>
+    
+    <div>
+     
+    </div>
+</body>
+</html>
